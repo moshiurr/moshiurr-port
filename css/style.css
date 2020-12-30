@@ -13,6 +13,8 @@
     --themeDotColor: #3e464a;
     --previewBg: rgba(251, 249, 243, 0.8);
     --previewShadow: #f0ead6;
+
+    --buttonColor: black;
 }
 
 html, body {
@@ -25,13 +27,15 @@ h1, strong{
     font-family: 'Bungee Outline', cursive;
 }
 
-h5, h3 {
+h5, h3, h7{
+    color: var(--mainText);
     font-family: 'Holtwood One SC', sans-serif;
 }
 
 h1 {font-size: 56px;}
 h3 {font-size: 30px;}
-h5 {font-size: 24px;}
+h5 {font-size: 20px;}
+h7 {font-size: 15px}
 
 a {
     text-decoration: none;
@@ -238,8 +242,8 @@ p, span, label, input, textarea {
     justify-self: center;
     align-self: center;
 
-    height: 320px;
-    width: 15em;
+    height: 350px;
+    width: 20em;
     margin-bottom: 1em;
 
     text-align: center;
@@ -258,7 +262,7 @@ p, span, label, input, textarea {
 
 #project-image {
     height: 12em;
-    width: 15em;
+    width: 20em;
 
     /* border: 1px dashed var(--borderColor); */
 }
@@ -268,7 +272,45 @@ p, span, label, input, textarea {
     padding-bottom: 10px;
 }
 
+#contact-form {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid var(--borderColor);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--mainColor);
+    margin-bottom: 50px;
+}
 
+#contact-form label {
+    line-height: 2.5em;
+}
+
+#contact-form textarea {
+    min-height: 100px;
+    font: 14px;
+}
+
+.input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--normalColor);
+    border-radius: 5px;
+    border: 1px solid var(--borderColor);
+    font-size: 14px;
+}
+
+#submit-button {
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: var(--buttonColor);
+    border: none;
+}
 
 
 @media screen and (max-width: 1200px){

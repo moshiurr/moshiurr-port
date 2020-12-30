@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moshiur Rahman</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link id="theme" rel="stylesheet" href="">
 </head>
 <body>
 
@@ -19,9 +20,9 @@
             <div class="intro-container">
                 <div class="nav-wrapper">
                     <ul id="navigation">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 
@@ -30,10 +31,10 @@
                     <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
                     <p id="alert">Settings will be saved for <br>your next visit.</p>
 
@@ -56,9 +57,9 @@
         </div>
     </section>
 
-    <!-- Second section -->
+    <!-- About section -->
 
-    <section class="section-2">
+    <section class="section-2" id="about">
         <div class="main_container">
             <h3>More about me:</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptatibus consequatur inventore molestiae iure, excepturi harum voluptatum, perferendis exercitationem, temporibus odit qui eaque facilis optio rem quidem aut iste? Non.</p>
@@ -79,6 +80,8 @@
                         <img id="project-image" src="images/pjt.jpg" alt="project-thumb">
                     </div>
 
+                    <h7>Project Title</h7>
+
                     <div class="project-details">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non minima reprehenderit similique.</p>
                         <button>GitHub</button>
@@ -90,6 +93,8 @@
                         <img id="project-image" src="images/pjt.jpg" alt="project-thumb">
                     </div>
                     
+                    <h7>Project Title</h7>
+
                     <div class="project-details">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non minima reprehenderit similique.</p>
                         <button>GitHub</button>
@@ -103,6 +108,7 @@
                         <img id="project-image" src="images/pjt.jpg" alt="project-thumb">
                     </div>
                     
+                    <h7>Project Title</h7>
                     <div class="project-details">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non minima reprehenderit similique.</p>
                         <button>GitHub</button>
@@ -116,8 +122,27 @@
 
     <section class="section-2" id="contact">
         <div class="main_container">
-            Contact
+            <div class="contact-wrapper">
+                <h3 style="text-align: center;">Contact me</h3>
+                <form id="contact-form">
+                    <label>Name</label>
+                    <input class="input-field" type="text" name="name">
+
+                    <label>Subject</label>
+                    <input class="input-field" type="text" name="subject">
+
+                    <label>Email</label>
+                    <input class="input-field" type="text" name="email">
+
+                    <label>Message</label>
+                    <textarea name="message" class="input-field"></textarea>
+                    
+                    <input id="submit-button" type="submit" value="Send">
+                </form>
+            </div>
         </div>
     </section>
+
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

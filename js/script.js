@@ -31,5 +31,29 @@ function setTheme(theme){
     }
 
     localStorage.setItem('theme', theme)
-
 }
+
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinkList = document.querySelectorAll('.nav-links li');
+
+    burger.addEventListener('click' ,() => {
+
+        nav.classList.toggle('nav-active');
+
+        //line animation
+        burger.classList.toggle('toggle-burger');
+
+        navLinkList.forEach((link, index) => {
+            if(link.style.animation){
+                link.style.animation = '';
+            }else {
+                link.style.animation = 'navLinkFade 0.5s ease forwards 0.2s';
+            }
+        });
+    });
+}
+
+navSlide();
+

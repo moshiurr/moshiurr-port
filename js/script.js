@@ -20,14 +20,18 @@ for(var i=0; allTheme.length > i; i++){
 function setTheme(theme){
     if(theme == 'light'){
         document.getElementById('theme').href = 'css/style.css'
+        document.getElementById('main-logo').src = 'images/logo.png'
     }
     else if(theme == 'blue'){
         document.getElementById('theme').href = 'css/blue.css'
+        document.getElementById('main-logo').src = 'images/white.png'
     }
     else if(theme == 'green'){
         document.getElementById('theme').href = 'css/green.css'
+        document.getElementById('main-logo').src = 'images/white.png'
     }else{
         document.getElementById('theme').href = 'css/purple.css'
+        document.getElementById('main-logo').src = 'images/white.png'
     }
 
     localStorage.setItem('theme', theme)
@@ -56,4 +60,3 @@ const navSlide = () => {
 }
 
 navSlide();
-
